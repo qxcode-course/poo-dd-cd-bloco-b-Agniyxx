@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_16-39-43",
+            "content": "@@ -66,219 +66,8 @@\n anho\n- = 0%0A    %0A    def setTamanho(self):%0A        self.tamanho = self.setTamanho%0A        if self.tamanho %3C 20 and self.tamanho %3E 50:%0A            print(f%22fail: tamanho atibuido invalido%22)%0A        %0A    while %0A        %0A%0A\n %0A%0A  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-07_16-51-30",
+            "content": "class chinela: \n    def __init__(self, tamanho):\n        self.tamanho = 0\n    \n    def setTamanho(self):\n        self.tamanho = self.setTamanho\n        if self.tamanho < 20 and self.tamanho > 50:\n            print(f\"fail: tamanho atibuido invalido\")\n        \n    while \n        \n\n\n\n    ",
+            "lines": "15"
+        }
+    ]
+}
