@@ -1,7 +1,6 @@
 class chinela: 
-    def __init__(self, tamanho: int):
-        self.tamanho = 0
-    
+    def __init__(self):
+        self.__tamanho = 0
     
     def setTamanho(self, valor: int):
         if not (valor, int):
