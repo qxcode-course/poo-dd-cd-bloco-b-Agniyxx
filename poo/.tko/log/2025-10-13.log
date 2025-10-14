@@ -1,0 +1,34 @@
+2025-10-13 20:34:34, MOVE, v:1, k:chinela, mode:PICK
+2025-10-13 20:34:37, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:19
+2025-10-13 20:39:29, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:19
+2025-10-13 20:39:31, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-10-13 20:39:32, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-10-13 20:39:32, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-10-13 20:39:32, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-10-13 20:48:54, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:15
+2025-10-13 20:48:54, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:15
+2025-10-13 20:48:55, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:15
+2025-10-13 20:48:55, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-10-13 20:50:04, EXEC, v:1, k:chinela, mode:LOCK, rate:0, size:18
+2025-10-13 20:58:45, EXEC, v:1, k:chinela, mode:LOCK, rate:100, size:18
+2025-10-13 21:02:32, EXEC, v:1, k:chinela, mode:LOCK, rate:100, size:18
+2025-10-13 21:02:33, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:33, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:33, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:33, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:33, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:34, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:34, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:34, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:35, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:42, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:42, EXEC, v:1, k:chinela, mode:LOCK, rate:100
+2025-10-13 21:02:43, EXEC, v:1, k:chinela, mode:FREE
+2025-10-13 21:03:30, EXEC, v:1, k:chinela, mode:LOCK, rate:100, size:17
+2025-10-13 21:03:47, MOVE, v:1, k:chinela, mode:BACK
+2025-10-13 21:04:26, MOVE, v:1, k:camisa, mode:PICK
+2025-10-13 21:04:28, EXEC, v:1, k:camisa, mode:LOCK, rate:100, size:0
+2025-10-13 22:20:34, MOVE, v:1, k:camisa, mode:BACK
+2025-10-13 23:08:20, MOVE, v:1, k:roupa, mode:DOWN
+2025-10-13 23:08:26, MOVE, v:1, k:relogio, mode:DOWN
+2025-10-13 23:10:44, SELF, v:1, k:chinela, rate:100, human:s, alone:8, study:120

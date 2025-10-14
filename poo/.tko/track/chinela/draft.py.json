@@ -7,8 +7,43 @@
         },
         {
             "label": "2025-10-07_16-51-30",
-            "content": "class chinela: \n    def __init__(self, tamanho):\n        self.tamanho = 0\n    \n    def setTamanho(self):\n        self.tamanho = self.setTamanho\n        if self.tamanho < 20 and self.tamanho > 50:\n            print(f\"fail: tamanho atibuido invalido\")\n        \n    while \n        \n\n\n\n    ",
+            "content": "@@ -39,21 +39,16 @@\n  tamanho\n-: int\n ):%0A     \n@@ -65,24 +65,17 @@\n manho = \n-tamanho \n+0\n %0A    %0A  \n@@ -80,17 +80,20 @@\n     def \n-t\n+setT\n amanho(s\n@@ -110,15 +110,8 @@\n     \n-return \n self\n@@ -123,172 +123,58 @@\n nho \n-%0A    %0A    def setTamanho(self, valor: int):%0A        if not valor= int:%0A             print(f%22fail:o tamanho deve ser um numero inteiro%22)%0A        elif not valor\n+= self.setTamanho%0A        if self.tamanho %3C\n  20 \n-%3C=\n+and\n  sel\n@@ -187,10 +187,10 @@\n nho \n-%3C=\n+%3E \n 50:%0A\n@@ -218,10 +218,8 @@\n ail:\n- o\n  tam\n@@ -236,75 +236,18 @@\n ido \n-deve ser um numero entre 20 e 50%22)%0A        elif not valor %25 2 = 0: \n+invalido%22)\n %0A   \n@@ -255,61 +255,28 @@\n     \n+%0A\n     \n- print(f%22fail:o tamanho deve ser um numero par%22)%0A\n+while %0A        \n %0A%0A%0A%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2025-10-13_20-34-37",
+            "content": "@@ -107,32 +107,39 @@\n (self):%0A        \n+return \n self.tamanho = 0\n@@ -139,12 +139,8 @@\n nho \n-= 0 \n %0A   \n@@ -194,16 +194,27 @@\n  if not \n+valor= int:\n %0A       \n@@ -271,32 +271,34 @@\n teiro%22)%0A        \n+el\n if not valor (20\n@@ -294,17 +294,16 @@\n t valor \n-(\n 20 %3C= se\n@@ -319,12 +319,10 @@\n o %3C=\n- \n 50\n-)\n :%0A  \n@@ -399,32 +399,34 @@\n  e 50%22)%0A        \n+el\n if not valor %25 2\n@@ -430,9 +430,8 @@\n %25 2 \n-!\n = 0:\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-13_20-39-29",
+            "content": "@@ -1,91 +1,64 @@\n-class chinela: %0A    def __init__(self, tamanho: int):%0A        self.tamanho = 0\n+@@ -74,43 +74,70 @@%0A o = %0A-0%0A+tamanho %0A %250A    %0A+%250A\n %0A     \n-   \n+%0A-\n self\n@@ -75,282 +75,141 @@\n o = \n-tamanho%0A    %0A    def setTamanho(self, valor: int):%0A        if not (valor, int):%0A             print(f%22fail:o tamanho deve ser um numero inteiro%22)%0A        if not (20 %3C=\n+%0A+def tamanho(self):%250A       \n  self.\n+%0A \n tamanho\n- %3C= 50):%0A            print(f%22fail: o tamanho atibuido deve ser um numero entre 20 e 50%22)%0A      \n+%0A+ = 0 %0A %250A   %0A@@ -195,21 +195,8 @@%0A not %0A-(valor, int):%0A %250A   %0A@@ -272,16 +272,22 @@%0A\n   if\n@@ -217,99 +217,92 @@\n not \n+%0A+\n valor \n-%25 2 != 0: %0A             print(f%22fail:o tamanho deve ser um numero par%22)\n+%0A (20 %253C= s%0A@@ -483,116 +483,12 @@%0A r%2522)%250A%0A+%250A%250A%250A%250A\n %0A     \n+%0A- \n    else:\n %0A   \n@@ -297,17 +297,19 @@\n    else:\n-%0A\n+%250A\n         \n@@ -333,17 +333,19 @@\n = valor:\n-%0A\n+%250A\n         \n@@ -355,17 +355,19 @@\n  print(f\n-%22\n+%2522\n o tamanh\n@@ -390,9 +390,11 @@\n omo \n-%7B\n+%257B\n self\n@@ -405,7 +405,12 @@\n anho\n-%7D%22)\n+%257D%2522)%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-13_20-48-54",
+            "content": "@@ -575,26 +575,4 @@\n o%7D%22)\n-%0A%0Adef main(self):%0A    \n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-13_20-50-04",
+            "content": "@@ -97,16 +97,17 @@\n amanho =\n+ \n tamanho%0A\n@@ -366,35 +366,16 @@\n  e 50%22)%0A\n-            return%0A\n         \n@@ -398,16 +398,16 @@\n  != 0: %0A\n+\n         \n@@ -471,28 +471,26 @@\n     \n-     return%0A\n+else:%0A    \n         \n if s\n@@ -485,19 +485,16 @@\n         \n-if \n self.tam\n@@ -499,17 +499,16 @@\n amanho =\n-=\n  valor:%0A\n@@ -573,9 +573,28 @@\n nho%7D%22)%0A%0A\n-%0A\n+def main(self):%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-13_20-58-45",
+            "content": "@@ -99,17 +99,17 @@\n anho\n-(\n+ =\n tamanho\n-)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-13_21-02-32",
+            "content": "@@ -597,8 +597,9 @@\n nho%7D%22)%0A%0A\n+%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-13_21-03-30",
+            "content": "class chinela: \n    def __init__(self, tamanho: int):\n        self.tamanho = 0\n        self.setTamanho(tamanho)\n    \n    def setTamanho(self, valor: int):\n        if not (valor, int):\n             print(f\"fail:o tamanho deve ser um numero inteiro\")\n        if not (20 <= self.tamanho <= 50):\n            print(f\"fail: o tamanho atibuido deve ser um numero entre 20 e 50\")\n            return\n        if not valor % 2 != 0: \n             print(f\"fail:o tamanho deve ser um numero par\")\n             return\n        if self.tamanho == valor:\n            print(f\"o tamanho foi definido como {self.tamanho}\")\n\n",
+            "lines": "17"
         }
     ]
 }
