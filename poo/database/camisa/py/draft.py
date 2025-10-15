@@ -14,7 +14,8 @@ class roupa:
         if not tamanho in tamanhos: 
             print(f"o tammanho deve ser {tamanhos}")
 
-def roupa = Roupa()
+def main()
+roupa = Roupa()
 while roupa.getTamanho() == "":
     print("Digite seu tamanho de roupa")
     tamanho = input()
