@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-16_13-23-01",
+            "content": "class roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def setTamanho(self):\n        return self.tamanho\n\n    def setTamanho(self, tamanho:str):\n        tamanhos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if tamanho in tamanhos:\n            self.tamanho = tamanho\n            print(f\"o tamanho escolhido foi {tamanho}\")\n            return\n        if not tamanho in tamanhos: \n            print(f\"o tammanho deve ser {tamanhos}\")\n\ndef main()\nroupa = Roupa()\nwhile roupa.getTamanho() == \"\":\n    print(\"Digite seu tamanho de roupa\")\n    tamanho = input()\n    roupa.setTamanho(tamanho)\n\nprint(\"Parabens, voc\u00ea comprou uma rouppa tamanho\", roupa.setTamanho())\n",
+            "lines": "24"
+        }
+    ]
+}

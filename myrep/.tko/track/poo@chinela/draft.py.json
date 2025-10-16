@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-16_13-22-57",
+            "content": "class chinela: \n    def __init__(self):\n        self.__tamanho = 0\n    \n    def setTamanho(self, valor: int):\n        if not (valor, int):\n             print(f\"fail:o tamanho deve ser um numero inteiro\")\n        if not (20 <= self.tamanho <= 50):\n            print(f\"fail: o tamanho atibuido deve ser um numero entre 20 e 50\")\n            return\n        if not valor % 2 != 0: \n             print(f\"fail:o tamanho deve ser um numero par\")\n             return\n        if self.tamanho == valor:\n            print(f\"o tamanho foi definido como {self.tamanho}\")\n\n",
+            "lines": "16"
+        }
+    ]
+}
