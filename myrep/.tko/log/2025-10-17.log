@@ -1,0 +1,5 @@
+2025-10-17 13:42:10, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-17 13:42:10, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:16
+2025-10-17 13:42:16, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-17 13:42:17, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-17 13:42:18, MOVE, v:1, k:poo@relogio, mode:BACK
