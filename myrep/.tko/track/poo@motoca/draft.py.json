@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-19_15-58-32",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome = nome\n    def get_nome(self):\n        return self.__nome\n    def set_nome(self, valor:str):\n        self.__nome = valor\n    def __str__ (self):\n        return self.__nome\n    \nclass Moto:\n    def __init__(self):\n        self.cliente: Pessoa | None = None\n\n    def inserir(self, cliente: Pessoa) -> bool:\n        if self.cliente != None:\n            print(\"moto ocupada\")\n            return False\n        self.cliente = cliente\n        return True\n\n    def remover(self) -> Pessoa| None:\n        if self.cliente == None:\n            print(\"moto vazia\")\n            return None\n        aux: Pessoa = self.cliente\n        self. cliente = None\n        return aux\n    \n    def __str__(self) -> str:\n        return f\"moto: {self.cliente}\"\n    \ndef main():\n    while True:\n        moto = Moto()\n        line:str = input()\n        print(f\"${line}\")\n        args: list\n\n        if args[0] == \"end\":\n            break\n        elif args[0]:\n            print(\"moto\")\n        elif args[0] == \"show\":\n            print(\"\")\n        elif args[0] == \"\":\n\n        else:\n            print(\"fail: comando invalido\")",
+            "lines": "49"
+        }
+    ]
+}

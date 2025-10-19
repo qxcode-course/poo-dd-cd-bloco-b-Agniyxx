@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2025-10-16_13-23-15",
-            "content": "",
+            "content": "@@ -1,1066 +0,0 @@\n-class Relogio:%0A    def __init__(self, horas: int, minutos: int, segundos: int):%0A        return%0A        self.__horas = horas%0A        self.__minutos == minutos%0A        self.__segundos = segundos%0A        self.set_hora(hora)%0A        self.set_minuto(minuto)%0A        self.set_segundos(segundos)%0A%0A        def set_horas(self):%0A%0A        def set_minutos(self):%0A%0A        def set_segundos(self):%0A%0A    def nextSecond(self):%0A        if self.__segundos %3C= 59:%0A            self.__segundos = 0%0A            self.__minutos += 1%0A%0A        if self.__minutos %3C= 59:%0A            self.__minutos = 0%0A            self.__horas += 1%0A%0A        if self.__horas %3C= 23:%0A            self.__horas = 0%0A%0A    def toString(self) -%3E int:%0A        return f%22HH: %7Bself.__horas: 02%7D, MM: %7Bself.__minutos:02%7D, SS: %7Bself.__segundos:02%7D%22)%0A%0Adef main():%0A    relogio = Relogio():%0A    while True:%0A        line: str = input()%0A        print(%22$ %7Bline%7D%22)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D== %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(relogio.set_horas())%0A%0A print(%22%22)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-19_17-17-29",
+            "content": "@@ -283,16 +283,20 @@\n undos)%0A%0A\n+    \n     def \n@@ -313,104 +313,16 @@\n self\n-, hora: int = 0):%0A        if horas %3C 0 or horas %3E 23:%0A            print(%22fail: hora invalida%22)%0A%0A\n+):%0A%0A    \n     \n@@ -345,15 +345,16 @@\n self\n-, \n ):%0A%0A\n-%0A\n+    \n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-19_17-23-16",
+            "content": "class Relogio:\n    def __init__(self, horas: int, minutos: int, segundos: int):\n        return\n        self.__horas = horas\n        self.__minutos == minutos\n        self.__segundos = segundos\n        self.set_hora(hora)\n        self.set_minuto(minuto)\n        self.set_segundos(segundos)\n\n    def set_horas(self, hora: int = 0):\n        if horas < 0 or horas > 23:\n            print(\"fail: hora invalida\")\n\n    def set_minutos(self, ):\n\n\n    def set_segundos(self):\n\n    def nextSecond(self):\n        if self.__segundos <= 59:\n            self.__segundos = 0\n            self.__minutos += 1\n\n        if self.__minutos <= 59:\n            self.__minutos = 0\n            self.__horas += 1\n\n        if self.__horas <= 23:\n            self.__horas = 0\n\n    def toString(self) -> int:\n        return f\"HH: {self.__horas: 02}, MM: {self.__minutos:02}, SS: {self.__segundos:02}\")\n\ndef main():\n    relogio = Relogio():\n    while True:\n        line: str = input()\n        print(\"$ {line}\")\n        args: list[str] = line.split(\" \")\n        if args[0]== \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogio.set_horas())\n\n print(\"\")",
+            "lines": "46"
         }
     ]
 }

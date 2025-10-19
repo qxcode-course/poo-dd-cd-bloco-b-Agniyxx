@@ -15,9 +15,10 @@ class chinela:
             print(f"o tamanho foi definido como {self.__tamanho}")
 
     def __str__(self) -> str:
-        print(f"")
+        return f"chinela: {self.__tamanho}"
 
 def main():
     chinela = Chinela()
-    line= input()
-    args =
+    line: str = input()
+    args = line.split(" ")
+    
