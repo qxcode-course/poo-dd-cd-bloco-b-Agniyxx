@@ -14,3 +14,10 @@ class chinela:
         if self.__tamanho == valor:
             print(f"o tamanho foi definido como {self.__tamanho}")
 
+    def __str__(self) -> str:
+        print(f"")
+
+def main():
+    chinela = Chinela()
+    line= input()
+    args =
