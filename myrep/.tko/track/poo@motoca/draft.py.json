@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2025-10-19_15-58-32",
-            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome = nome\n    def get_nome(self):\n        return self.__nome\n    def set_nome(self, valor:str):\n        self.__nome = valor\n    def __str__ (self):\n        return self.__nome\n    \nclass Moto:\n    def __init__(self):\n        self.cliente: Pessoa | None = None\n\n    def inserir(self, cliente: Pessoa) -> bool:\n        if self.cliente != None:\n            print(\"moto ocupada\")\n            return False\n        self.cliente = cliente\n        return True\n\n    def remover(self) -> Pessoa| None:\n        if self.cliente == None:\n            print(\"moto vazia\")\n            return None\n        aux: Pessoa = self.cliente\n        self. cliente = None\n        return aux\n    \n    def __str__(self) -> str:\n        return f\"moto: {self.cliente}\"\n    \ndef main():\n    while True:\n        moto = Moto()\n        line:str = input()\n        print(f\"${line}\")\n        args: list\n\n        if args[0] == \"end\":\n            break\n        elif args[0]:\n            print(\"moto\")\n        elif args[0] == \"show\":\n            print(\"\")\n        elif args[0] == \"\":\n\n        else:\n            print(\"fail: comando invalido\")",
+            "content": "@@ -51,26 +51,24 @@\n        self.\n-__\n nome = nome%0A\n@@ -274,34 +274,8 @@\n self\n-, potencia = 1, tempo: int\n ):%0A \n@@ -320,44 +320,8 @@\n one%0A\n-        self.__potencia = potencia%0A%0A\n %0A   \n@@ -776,119 +776,84 @@\n n f%22\n-power:%7Bself.valor%7D, time:%7Bself.tempo%7D, person:%7Bself.pessoa%7D%22%0A    %0Adef main():%0A    moto = Moto()%0A    while True:\n+moto: %7Bself.cliente%7D%22%0A    %0Adef main():%0A    while True:%0A        moto = Moto()\n %0A   \n@@ -924,46 +924,14 @@\n list\n-%5Bstr%5D = line.split(%22 %22)%0A        break%0A\n+%0A%0A    \n     \n@@ -963,14 +963,22 @@\n     \n+   \n+ \n break%0A\n+    \n     \n@@ -1010,23 +1010,31 @@\n  print(%22\n+moto\n %22)%0A    \n+  \n+  \n elif arg\n@@ -1061,49 +1061,26 @@\n     \n+    \n print(\n-moto\n+%22%22\n )%0A    \n-    valor = int(args%5B1%5D)%0A\n     \n@@ -1100,16 +1100,16 @@\n == %22\n-init\n %22:%0A%0A\n+    \n     \n",
             "lines": "49"
+        },
+        {
+            "label": "2025-10-21_15-25-28",
+            "content": "@@ -286,16 +286,24 @@\n ncia\n-:int\n  = 1\n+, tempo: int\n ):%0A \n@@ -314,22 +314,23 @@\n    self.\n-pessoa\n+cliente\n : Pessoa\n@@ -357,16 +357,18 @@\n    self.\n+__\n potencia\n@@ -383,30 +383,8 @@\n cia%0A\n-        self.tempo = 0\n %0A%0A  \n@@ -403,22 +403,23 @@\n r(self, \n-pessoa\n+cliente\n : Pessoa\n@@ -445,22 +445,23 @@\n if self.\n-pessoa\n+cliente\n  != None\n@@ -538,23 +538,25 @@\n elf.\n-pessoa = pessoa\n+cliente = cliente\n %0A   \n@@ -628,22 +628,23 @@\n if self.\n-pessoa\n+cliente\n  == None\n@@ -728,22 +728,23 @@\n  = self.\n-pessoa\n+cliente\n %0A       \n@@ -749,22 +749,24 @@\n    self.\n-pessoa\n+ cliente\n  = None%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-21_15-30-32",
+            "content": "@@ -1121,24 +1121,28 @@\n 0%5D:%0A        \n+    \n print(%22%22)%0A  \n@@ -1195,24 +1195,21 @@\n         \n-potencia\n+valor\n  = int(a\n@@ -1220,17 +1220,8 @@\n 1%5D)%0A\n-        %0A\n     \n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-21_15-37-04",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.__nome = nome\n    def get_nome(self):\n        return self.__nome\n    def set_nome(self, valor:str):\n        self.__nome = valor\n    def __str__ (self):\n        return self.__nome\n    \nclass Moto:\n    def __init__(self, potencia:int = 1):\n        self.pessoa: Pessoa | None = None\n        self.potencia = potencia\n        self.tempo = 0\n\n    def inserir(self, pessoa: Pessoa) -> bool:\n        if self.pessoa != None:\n            print(\"moto ocupada\")\n            return False\n        self.pessoa = pessoa\n        return True\n\n    def remover(self) -> Pessoa| None:\n        if self.pessoa == None:\n            print(\"moto vazia\")\n            return None\n        aux: Pessoa = self.pessoa\n        self.pessoa = None\n        return aux\n    \n    def __str__(self) -> str:\n        return f\"power:{self.valor}, time:{self.tempo}, person:{self.pessoa}\"\n    \ndef main():\n    moto = Moto()\n    while True:\n        line:str = input()\n        print(f\"${line}\")\n        args: list[str] = line.split(\" \")\n        break\n    if args[0] == \"end\":\n        break\n    elif args[0]:\n        print(\"\")\n    elif args[0] == \"show\":\n        print(moto)\n        potencia = int(args[1])\n        \n    elif args[0] == \"init\":\n\n    else:\n            print(\"fail: comando invalido\")",
+            "lines": "53"
         }
     ]
 }

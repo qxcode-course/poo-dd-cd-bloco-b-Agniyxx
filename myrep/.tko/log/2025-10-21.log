@@ -1,0 +1,13 @@
+2025-10-21 14:13:21, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-21 14:13:27, MOVE, v:1, k:poo@motouber, mode:DOWN
+2025-10-21 14:13:31, MOVE, v:1, k:poo@tamagotchi, mode:DOWN
+2025-10-21 14:13:50, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-21 15:25:28, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-21 15:25:28, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:52
+2025-10-21 15:30:32, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:52
+2025-10-21 15:30:51, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-21 15:30:51, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-21 15:34:27, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-21 15:37:04, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:53
+2025-10-21 16:12:05, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-21 16:12:06, MOVE, v:1, k:poo@motoca, mode:BACK

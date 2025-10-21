@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\User\poo-dd-cd-bloco-a-Agniyxx\poo-dd-cd-bloco-b-Agniyxx\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-20 21:03:57'
+  cache_timestamp: '2025-10-21 15:19:33'
   filters:
   - acesso
   - simples
@@ -25,4 +25,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: poo@chinela
+selected: poo@motoca
