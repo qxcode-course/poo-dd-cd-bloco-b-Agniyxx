@@ -8,27 +8,32 @@ class Relogio:
         self.set_segundos(segundos)
 
     def set_horas(self, horas: int):
-        if horas < 0 or horas > 23:
+        if horas <= 0 or horas <= 23:
+            self.__horas = horas
+        else:
             print("fail: hora invalida")
 
     def set_minutos(self, minutos: int):
-     if minutos < 0 or minutos > 59:
-        print("fail: minuto invalido")
+        if minutos <= 0 or minutos <= 59:
+            self.__minutos = minutos
+        else:
+            print("fail: minuto invalido")
 
     def set_segundos(self, segundos: int):
-     if segundos < 0 or segundos > 59:
-        print("fail: segundo invalido")
+        if segundos <= 0 or segundos <= 59:
+            self.__segundos = segundos
+        else:
+            print("fail: segundo invalido")
 
     def nextSecond(self):
-        if self.__segundos <= 59:
+        self.__segundos += 1
+        if self.__segundos > 59:
             self.__segundos = 0
             self.__minutos += 1
-
-        if self.__minutos <= 59:
+        if self.__minutos > 59:
             self.__minutos = 0
             self.__horas += 1
-
-        if self.__horas <= 23:
+        if self.__horas > 23:
             self.__horas = 0
 
     def __str__(self):
