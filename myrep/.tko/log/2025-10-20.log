@@ -88,3 +88,6 @@
 2025-10-20 21:22:53, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
 2025-10-20 21:23:04, MOVE, v:1, k:poo@relogio, mode:BACK
 2025-10-20 21:24:23, SELF, v:1, k:poo@relogio, rate:100, human:sim_monitor, other:sim, alone:9, study:400
+2025-10-20 21:55:42, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 21:55:46, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:43
+2025-10-20 21:55:56, EXEC, v:1, k:poo@chinela, mode:FREE

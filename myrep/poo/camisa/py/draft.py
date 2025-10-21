@@ -3,38 +3,34 @@ class Roupa:
         self.__tamanho: str = ""
 
     def getTamanho(self):
-        return self.tamanho
+        return self.__tamanho
 
     def setTamanho(self, tamanho:str):
+        self.__tamanho = tamanho
         tamanhos = ["PP", "P", "M", "G", "GG", "XG"]
         if tamanho in tamanhos:
-            self.tamanho = tamanho
             print(f"o tamanho escolhido foi {tamanho}")
-            return
+            return True
         if not tamanho in tamanhos: 
             print(f"o tammanho deve ser {tamanhos}")
-
-
+            return False
 
     def __str__(self) -> str:
-        return f"roupa: {self.tamanho}"
+        return f"roupa: {self.__tamanho}"
     
 def main():
     roupa = Roupa()
     while roupa.getTamanho() == "":
         line: str = input()
-        args = line.split()
         print(f"${line}")
-        roupa = input("qual o tamanho de roupa você escolhe?").upper()
-
-    if roupa.setTamanho(tamanho) == True:
-    
-
-    elif args[0] =="end": 
-        break
-    elif args[0]== "show":
-        print(roupa)
-    elif args[0]== "size":
-        print(tamanho)
-
-main()
+        args = line.split(" ")
+        if roupa.setTamanho(tamanho) == True:
+            print("")
+        elif args[0] =="end": 
+            break
+        elif args[0]== "show":
+            print(roupa)
+        elif args[0]== "size":
+            print(tamanho)
+        else:
+            print("comando invalido")

@@ -12,8 +12,13 @@
         },
         {
             "label": "2025-10-19_16-05-43",
-            "content": "class chinela: \n    def __init__(self):\n        self.__tamanho = 0\n    \n    def setTamanho(self, valor: int):\n        if not (valor, int):\n             print(f\"fail:o tamanho deve ser um numero inteiro\")\n        if not (20 <= self.__tamanho <= 50):\n            print(f\"fail: o tamanho atibuido deve ser um numero entre 20 e 50\")\n            return\n        if not valor % 2 != 0: \n             print(f\"fail:o tamanho deve ser um numero par\")\n             return\n        if self.__tamanho == valor:\n            print(f\"o tamanho foi definido como {self.__tamanho}\")\n\n    def __str__(self) -> str:\n        return f\"chinela: {self.__tamanho}\"\n\ndef main():\n    chinela = Chinela()\n    line: str = input()\n    args = line.split(\" \")\n    ",
+            "content": "@@ -498,53 +498,70 @@\n     \n-%0A\n+   \n     \n-def nextTamanho(self):%0A        %0A        \n+ print(f%22o tamanho foi definido como %7Bself.__tamanho%7D%22)\n %0A%0A  \n@@ -697,29 +697,8 @@\n t()%0A\n-    print(%22$%7Bline%7D%22)%0A\n     \n@@ -723,247 +723,8 @@\n %22 %22)\n-%0A%0A    if args%5B0%5D == %22end%22:%0A        print()%0A    if args%5B0%5D == %22show%22:%0A        print(chinela)%0A    if args%5B0%5D == %22set%22:%0A        chinela.setTamanho()%0A    if args%5B0%5D == %22next%22:%0A        print()%0A    if args%5B0%5D == %22init%22:%0A        print()%0A%0Amain()%0A%0A\n %0A   \n",
             "lines": "24"
+        },
+        {
+            "label": "2025-10-20_21-55-46",
+            "content": "class chinela: \n    def __init__(self):\n        self.__tamanho = 0\n    \n    def setTamanho(self, valor: int):\n        if not (valor, int):\n             print(f\"fail:o tamanho deve ser um numero inteiro\")\n        if not (20 <= self.__tamanho <= 50):\n            print(f\"fail: o tamanho atibuido deve ser um numero entre 20 e 50\")\n            return\n        if not valor % 2 != 0: \n             print(f\"fail:o tamanho deve ser um numero par\")\n             return\n        if self.__tamanho == valor:\n    \n    def nextTamanho(self):\n        \n        \n\n    def __str__(self) -> str:\n        return f\"chinela: {self.__tamanho}\"\n\ndef main():\n    chinela = Chinela()\n    line: str = input()\n    print(\"${line}\")\n    args = line.split(\" \")\n\n    if args[0] == \"end\":\n        print()\n    if args[0] == \"show\":\n        print(chinela)\n    if args[0] == \"set\":\n        chinela.setTamanho()\n    if args[0] == \"next\":\n        print()\n    if args[0] == \"init\":\n        print()\n\nmain()\n\n\n    ",
+            "lines": "43"
         }
     ]
 }
