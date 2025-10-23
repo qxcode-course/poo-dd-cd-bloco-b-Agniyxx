@@ -17,8 +17,28 @@
         },
         {
             "label": "2025-10-21_15-37-04",
-            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.__nome = nome\n    def get_nome(self):\n        return self.__nome\n    def set_nome(self, valor:str):\n        self.__nome = valor\n    def __str__ (self):\n        return self.__nome\n    \nclass Moto:\n    def __init__(self, potencia:int = 1):\n        self.pessoa: Pessoa | None = None\n        self.potencia = potencia\n        self.tempo = 0\n\n    def inserir(self, pessoa: Pessoa) -> bool:\n        if self.pessoa != None:\n            print(\"moto ocupada\")\n            return False\n        self.pessoa = pessoa\n        return True\n\n    def remover(self) -> Pessoa| None:\n        if self.pessoa == None:\n            print(\"moto vazia\")\n            return None\n        aux: Pessoa = self.pessoa\n        self.pessoa = None\n        return aux\n    \n    def __str__(self) -> str:\n        return f\"power:{self.valor}, time:{self.tempo}, person:{self.pessoa}\"\n    \ndef main():\n    moto = Moto()\n    while True:\n        line:str = input()\n        print(f\"${line}\")\n        args: list[str] = line.split(\" \")\n        break\n    if args[0] == \"end\":\n        break\n    elif args[0]:\n        print(\"\")\n    elif args[0] == \"show\":\n        print(moto)\n        potencia = int(args[1])\n        \n    elif args[0] == \"init\":\n\n    else:\n            print(\"fail: comando invalido\")",
+            "content": "@@ -796,53 +796,8 @@\n    %0A\n-    def show(self):%0A        print(self)%0A    %0A\n     \n@@ -851,24 +851,21 @@\n r:%7Bself.\n-potencia\n+valor\n %7D, time:\n@@ -1191,212 +1191,73 @@\n     \n-elif args%5B0%5D == %22init%22:%0A        %0A    elif args%5B0%5D == %22enter%22:%0A       %0A    elif args%5B0%5D == %22leave%22:%0A%0A    elif args%5B0%5D == %22buy%22:%0A           %0A    elif args%5B0%5D == %22drive%22:%0A%0A    elif args%5B0%5D == %22honk%22:%0A       \n+    potencia = int(args%5B1%5D)%0A        %0A    elif args%5B0%5D == %22init%22:%0A\n %0A   \n",
             "lines": "53"
+        },
+        {
+            "label": "2025-10-23_10-31-06",
+            "content": "@@ -43,23 +43,11 @@\n  str\n-, idade: int\n ):%0A\n+\n     \n@@ -73,37 +73,8 @@\n ome%0A\n-        self.__idade = idade%0A\n     \n@@ -132,53 +132,62 @@\n def \n-get_idad\n+set_nom\n e(self\n-):%0A        return self.__idade \n+, valor:str):%0A        self.__nome = valor\n %0A   \n@@ -236,17 +236,19 @@\n _nome%0A  \n+  \n %0A\n-\n class Mo\n@@ -400,20 +400,22 @@\n     def \n-ente\n+inseri\n r(self, \n@@ -594,16 +594,17 @@\n f remove\n+r\n (self) -\n@@ -791,475 +791,13 @@\n aux%0A\n+\n     %0A\n-    def comprarTempo(self, time: int):%0A        self.tempo += time%0A        if self.tempo %3E= time:%0A            self.tempo == self.tempo%0A%0A    def drive(self, time: int):%0A        if self.pessoa == None:%0A            print(%22fail: n%C3%A3o ha ninguem na moto%22)%0A            return%0A        if self.tempo == 0:%0A            print(%22fail: primeiro compre tempo%22)%0A            return%0A        if time %3E self.tempo: %0A            tempoPercorrido = self.tempo%0A%0A    def honk(self):%0A%0A%0A%0A%0A%0A\n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-23_11-14-58",
+            "content": "@@ -110,17 +110,16 @@\n = idade%0A\n-%0A\n     def \n@@ -161,21 +161,16 @@\n .__nome%0A\n-    %0A\n     def \n@@ -215,21 +215,16 @@\n _idade %0A\n-    %0A\n     def \n@@ -269,22 +269,8 @@\n nome\n-: self.__idade\n %0A  %0A\n@@ -870,83 +870,62 @@\n     \n-if time %3C= 0:%0A            print(%22fail: tempo invalido%22)%0A            return%0A\n+self.tempo += time%0A        if self.tempo %3E= time:%0A    \n     \n@@ -939,23 +939,29 @@\n f.tempo \n-+= time\n+== self.tempo\n %0A%0A    de\n@@ -1091,119 +1091,8 @@\n urn%0A\n-        if self.pessoa.get_idade() %3C 10:%0A            print(%22fail: muito jovem pra pilotar%22)%0A            return%0A\n     \n@@ -1230,94 +1230,25 @@\n     \n-print(f%22fail: tempo acabou ap%C3%B3s andar %7Bself.tempo%7D minutos%22)%0A        else:%0A           \n+tempoPercorrido =\n  sel\n@@ -1258,16 +1258,8 @@\n empo\n- -= time\n %0A%0A  \n@@ -1280,25 +1280,11 @@\n f):%0A\n-        pint(%22p%22)\n+%0A%0A%0A\n %0A%0A  \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-23_11-31-09",
+            "content": "@@ -1517,41 +1517,14 @@\n    p\n-r\n int(%22\n-P%22 + %22e%22 * self.potencia %22m\n+p\n %22)%0A%0A\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-23_11-37-20",
+            "content": "@@ -1901,24 +1901,60 @@\n       break%0A\n+    elif args%5B0%5D:%0A        print(%22%22)%0A\n     elif arg\n@@ -2066,37 +2066,8 @@\n     \n-nome = args%5B1%5D%0A       idade =\n %0A   \n",
+            "lines": "92"
         }
     ]
 }

@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\User\poo-dd-cd-bloco-a-Agniyxx\poo-dd-cd-bloco-b-Agniyxx\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-21 15:19:33'
+  cache_timestamp: '2025-10-23 10:17:26'
   filters:
   - acesso
   - simples
@@ -17,6 +17,8 @@ expanded:
 - poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
 tasks:
+  poo@chinela: '{rate:100, alone:10, study:100}'
+  poo@camisa: '{rate:100, alone:10, study:100}'
   poo@relogio: '{rate:100, human:sim_monitor, other:sim, alone:9, study:400}'
 flags:
   quests: 0
