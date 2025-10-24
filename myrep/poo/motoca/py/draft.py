@@ -10,7 +10,7 @@ class Pessoa:
         return self.__idade 
     
     def __str__ (self):
-        return f"{self.__nome} : {self.__idade}"
+        return f"{self.__nome}:{self.__idade}"
   
 class Moto:
     def __init__(self, potencia:int = 1):
@@ -33,10 +33,10 @@ class Moto:
         self.pessoa = None
     
     def comprarTempo(self, time: int):
-        if time <= 0:
-            print("fail: buy time first")
-            return
-        self.tempo += time
+        if time < 0:
+            print(f"fail: ")
+        else:    
+            self.tempo += time
 
     def drive(self, time: int):
         if self.pessoa is None:
