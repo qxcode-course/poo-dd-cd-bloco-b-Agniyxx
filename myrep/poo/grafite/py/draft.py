@@ -6,27 +6,29 @@ class Lead:
 
     def usagePerSheet(self): int
 
-    getHardness()
+    def getHardness(self):
 
-    getSize()
+    def getSize(self):
 
-    getThickness()
+    def getThickness(self):
 
-    setSize(size: int):
+    def setSize(self, size: int):
 
     def __str__(self):
+        print("calibre: {self.thickness}, grafite: {}")
 
 
 class Pencil:
-    thickness
-    tip
+    def __init__(self, thickness: int,  tip: Lead | None): 
 
-    hasGrafite()
 
-    insert()
+    def hasGrafite(self,): bool
 
-    remove()
+    def insert(self, lead: Lead): bool
 
-    writePage(self):
+    def remove(self):
+
+    def writePage(self):
 
     def __str__(self):
+        print()

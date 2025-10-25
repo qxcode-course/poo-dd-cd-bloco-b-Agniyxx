@@ -7,8 +7,33 @@
         },
         {
             "label": "2025-10-25_13-33-35",
-            "content": "class Lead:\n    def __init__(self, thickness: int, hardness: str, size: int):\n        self.__thickness =  thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def usagePerSheet(self): int\n\n    getHardness()\n\n    getSize()\n\n    getThickness()\n\n    setSize(size: int):\n\n    def __str__(self):\n\n\nclass Pencil:\n    thickness\n    tip\n\n    hasGrafite()\n\n    insert()\n\n    remove()\n\n    writePage(self):\n\n    def __str__(self):",
+            "content": "@@ -210,20 +210,16 @@\n nt%0A%0A    \n-def \n getHardn\n@@ -229,20 +229,16 @@\n ()%0A%0A    \n-def \n getSize(\n@@ -244,20 +244,16 @@\n ()%0A%0A    \n-def \n getThick\n@@ -264,20 +264,16 @@\n ()%0A%0A    \n-def \n setSize(\n@@ -312,26 +312,10 @@\n f):%0A\n-        print()\n %0A%0A\n-%0A\n clas\n@@ -332,63 +332,31 @@\n     \n-def __init__(self, thickness: int,  tip: %0A   \n+thickness%0A    tip\n %0A%0A    \n-def \n hasG\n@@ -366,80 +366,43 @@\n ite(\n-self,): bool\n+)\n %0A%0A    \n-def \n insert(\n-self): bool\n+)\n %0A%0A    \n-def \n remove(\n-self\n )%0A%0A    \n-def \n writ\n@@ -441,20 +441,4 @@\n lf):\n-%0A        print()\n",
             "lines": "32"
+        },
+        {
+            "label": "2025-10-25_14-25-04",
+            "content": "@@ -405,22 +405,8 @@\n ip: \n-Lead %7C None): \n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_14-30-16",
+            "content": "@@ -222,30 +222,25 @@\n getHardness(\n-self):\n+)\n %0A%0A    def ge\n@@ -245,22 +245,17 @@\n getSize(\n-self):\n+)\n %0A%0A    de\n@@ -269,22 +269,17 @@\n ickness(\n-self):\n+)\n %0A%0A    de\n@@ -288,22 +288,16 @@\n setSize(\n-self, \n size: in\n@@ -416,16 +416,19 @@\n None): %0A\n+   \n %0A%0A    de\n@@ -477,20 +477,8 @@\n self\n-, lead: Lead\n ): b\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_14-38-05",
+            "content": "@@ -528,25 +528,24 @@\n remove(self)\n-:\n %0A%0A    def wr\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_14-38-16",
+            "content": "@@ -363,48 +363,8 @@\n int(\n-%22calibre: %7Bself.thickness%7D, grafite: %7B%7D%22\n )%0A%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_14-48-42",
+            "content": "class Lead:\n    def __init__(self, thickness: int, hardness: str, size: int):\n        self.__thickness =  thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def usagePerSheet(self): int\n\n    def getHardness(self):\n\n    def getSize(self):\n\n    def getThickness(self):\n\n    def setSize(self, size: int):\n\n    def __str__(self):\n        print(\"calibre: {self.thickness}, grafite: {}\")\n\n\nclass Pencil:\n    def __init__(self, thickness: int,  tip: Lead | None): \n\n\n    def hasGrafite(self,): bool\n\n    def insert(self, lead: Lead): bool\n\n    def remove(self):\n\n    def writePage(self):\n\n    def __str__(self):\n        print()",
+            "lines": "34"
         }
     ]
 }
