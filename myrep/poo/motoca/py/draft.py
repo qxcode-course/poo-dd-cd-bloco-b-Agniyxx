@@ -33,8 +33,8 @@ class Moto:
         self.pessoa = None
     
     def comprarTempo(self, time: int):
-        if time < 0:
-            print(f"fail: ")
+        if time <= 0:
+            print(f"fail: invalid time")
         else:    
             self.tempo += time
 
@@ -42,11 +42,15 @@ class Moto:
         if self.pessoa is None:
             print("fail: buy time first")
             return
-        if self.pessoa.get_idade() < 10:
+        if self.tempo == 0:
+            print("buy time first")
+            return
+        if self.pessoa.get_idade() > 10:
             print("fail: too old to drive")
             return
         if time > self.tempo: 
             print(f"fail: time finished after {self.tempo} minutes")
+            self.tempo = 0
         else:
             self.tempo -= time
 
@@ -81,12 +85,12 @@ def main():
         elif args[0] == "leave":
             moto.remove()
         elif args[0] == "buy":
-            moto.comprarTempo(0)
+            moto.comprarTempo(int(args[1]))
         elif args[0] == "drive":
-            moto.drive(0)
+            moto.drive(int(args[1]))
         elif args[0] == "honk":
             moto.honk()
         else:
-            print("fail: comando invalido")
+            print("fail: invalid comand")
 
 main()

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_12-52-19",
+            "content": "@@ -1,444 +0,0 @@\n-class Lead:%0A    def __init__(self, thickness: int, hardness: str, size: int):%0A        self.__thickness =  thickness%0A        self.__hardness = hardness%0A        self.__size = size%0A%0A    def usagePerSheet(self): int%0A%0A    getHardness()%0A%0A    getSize()%0A%0A    getThickness()%0A%0A    setSize(size: int):%0A%0A    def __str__(self):%0A%0A%0Aclass Pencil:%0A    thickness%0A    tip%0A%0A    hasGrafite()%0A%0A    insert()%0A%0A    remove()%0A%0A    writePage(self):%0A%0A    def __str__(self):\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_13-33-35",
+            "content": "class Lead:\n    def __init__(self, thickness: int, hardness: str, size: int):\n        self.__thickness =  thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def usagePerSheet(self): int\n\n    getHardness()\n\n    getSize()\n\n    getThickness()\n\n    setSize(size: int):\n\n    def __str__(self):\n\n\nclass Pencil:\n    thickness\n    tip\n\n    hasGrafite()\n\n    insert()\n\n    remove()\n\n    writePage(self):\n\n    def __str__(self):",
+            "lines": "32"
+        }
+    ]
+}

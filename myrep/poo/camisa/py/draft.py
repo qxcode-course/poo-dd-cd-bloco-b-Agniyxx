@@ -6,31 +6,35 @@ class Roupa:
         return self.__tamanho
 
     def setTamanho(self, tamanho:str):
-        self.__tamanho = tamanho
         tamanhos = ["PP", "P", "M", "G", "GG", "XG"]
         if tamanho in tamanhos:
+            self.__tamanho = tamanho
             print(f"o tamanho escolhido foi {tamanho}")
             return True
-        if not tamanho in tamanhos: 
-            print(f"o tammanho deve ser {tamanhos}")
+        else:
+            print(f"fail: Valor invalido, tente PP, P, M, G, GG ou XG")
             return False
 
     def __str__(self) -> str:
-        return f"roupa: {self.__tamanho}"
+        return f"size: ({self.__tamanho})"
     
 def main():
     roupa = Roupa()
-    while roupa.getTamanho() == "":
+    while True:
         line: str = input()
         print(f"${line}")
         args = line.split(" ")
-        if roupa.setTamanho(tamanho) == True:
-            print("")
-        elif args[0] =="end": 
+
+        if args[0] =="end": 
             break
+        elif args[0] == "set":
+            tamanho = args[1]
+            roupa.setTamanho(tamanho)
         elif args[0]== "show":
             print(roupa)
         elif args[0]== "size":
-            print(tamanho)
+            print(roupa.getTamanho())
         else:
             print("comando invalido")
+
+main()
