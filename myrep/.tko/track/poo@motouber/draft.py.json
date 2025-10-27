@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_21-06-26",
+            "content": "@@ -123,89 +123,8 @@\n ro%0A%0A\n-    def __str__(self) -%3E str:%0A        return f%22%7Bself.__nome%7D, %7Bself.__dinheiro%7D%22%0A\n %0Acla\n@@ -179,22 +179,19 @@\n orista: \n-Pessoa\n+str\n , passag\n@@ -196,22 +196,19 @@\n ageiro: \n-Pessoa\n+str\n ):%0A     \n@@ -355,209 +355,6 @@\n n f%22\n-Cost: %7Bself.%7D, Driver: %7Bself.%7D, Passenger: %7Bself.%7D%22%0A%0Adef main():%0A    moto = Moto()%0A    while True:%0A        line: str = input()%0A        print(%22$%7Bline%7D%22)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22\n+ \n %22\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-26_21-23-10",
+            "content": "@@ -123,134 +123,8 @@\n ro%0A%0A\n-        def getNome(self):%0A            return self.__nome%0A%0A        def getDinheiro(self):%0A            return self.__dinheiro%0A%0A\n     \n@@ -179,17 +179,18 @@\n .__nome%7D\n-:\n+, \n %7Bself.__\n@@ -266,23 +266,16 @@\n : Pessoa\n- %7C None\n , passag\n@@ -290,15 +290,8 @@\n ssoa\n- %7C None\n ):%0A \n@@ -450,23 +450,16 @@\n : %7Bself.\n-__custo\n %7D, Drive\n@@ -467,27 +467,16 @@\n : %7Bself.\n-__motorista\n %7D, Passe\n@@ -487,28 +487,16 @@\n : %7Bself.\n-__passageiro\n %7D%22%0A%0Adef \n@@ -523,19 +523,8 @@\n oto(\n-0, %22 %22, %22 %22\n )%0A  \n@@ -646,85 +646,5 @@\n == %22\n-end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(%22moto%22)\n+%22\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-26_21-41-34",
+            "content": "@@ -695,18 +695,16 @@\n (0, \n-None, None\n+%22 %22, %22 %22\n )%0A  \n@@ -896,13 +896,15 @@\n   print(\n+%22\n moto\n+%22\n )\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-26_21-42-22",
+            "content": "@@ -907,12 +907,4 @@\n oto)\n-%0A%0Amain()\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-26_21-42-56",
+            "content": "@@ -761,17 +761,16 @@\n   print(\n-f\n %22$%7Bline%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-26_21-43-22",
+            "content": "@@ -115,24 +115,28 @@\n = dinheiro%0A%0A\n+    \n     def get_\n@@ -134,18 +134,17 @@\n  def get\n-_n\n+N\n ome(self\n@@ -138,32 +138,36 @@\n  getNome(self):%0A\n+    \n         return s\n@@ -181,13 +181,13 @@\n ome%0A\n+%0A\n     \n-%0A\n     \n@@ -193,18 +193,17 @@\n  def get\n-_d\n+D\n inheiro(\n@@ -209,32 +209,36 @@\n (self):%0A        \n+    \n return self.__di\n@@ -243,17 +243,16 @@\n dinheiro\n- \n %0A%0A    de\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-26_21-50-14",
+            "content": "class Pessoa:\n    def __init__(self, nome:str, dinheiro: int):\n        self.__nome = nome\n        self.__dinheiro = dinheiro\n\n    def get_nome(self):\n        return self.__nome\n    \n    def get_dinheiro(self):\n        return self.__dinheiro \n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__dinheiro}\"\n\nclass Moto: \n    def __init__(self, custo: int, motorista: Pessoa | None, passageiro: Pessoa | None):\n        self.__custo = 0\n        self.__motorista = motorista\n        self.__passageiro = passageiro\n\n    def __str__(self) -> str:\n        return f\"Cost: {self.__custo}, Driver: {self.__motorista}, Passenger: {self.__passageiro}\"\n\ndef main():\n    moto = Moto(0, None, None)\n    while True:\n        line: str = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(moto)\n\nmain()",
+            "lines": "36"
+        }
+    ]
+}
