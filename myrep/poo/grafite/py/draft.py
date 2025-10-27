@@ -63,7 +63,6 @@ class Pencil:
         lead = self.__tip
         if lead.getSize() <= 10:
             print("fail:tamanho insufuciente")
-            
 
     def __str__(self):
         if self.__tip is not None:
